@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1052818230281",
+    "project_id": "evisa-ebc45",
+    "storage_bucket": "evisa-ebc45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052818230281:android:e4d89b7c9c052e051a3cd8",
+        "android_client_info": {
+          "package_name": "com.example.evisa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052818230281-d569omhq4pvj9pp7hcdje2jd1qgov00m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.evisa",
+            "certificate_hash": "433bf368fc7523baedbf41e1d5e7d3691a112967"
+          }
+        },
+        {
+          "client_id": "1052818230281-it3ehuui3fq2e2iimaqkf02nv5ogl12r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi3fKjgYIr7nE81SDpC_g9EiKwA5kOeBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052818230281-it3ehuui3fq2e2iimaqkf02nv5ogl12r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

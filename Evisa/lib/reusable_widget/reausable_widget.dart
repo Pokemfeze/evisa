@@ -11,31 +11,37 @@ Image logoWidget(String imageName){
 
   );
 }
-TextField reusableTextField(String text, IconData icon, bool isPasswordType, TextEditingController controller){
+TextField reusableTextField(String text, IconData icon, bool isPasswordType, TextEditingController controller) {
   return TextField(
     controller: controller,
     obscureText: isPasswordType,
     autocorrect: !isPasswordType,
-    cursorColor: Colors.grey,
-    style:  TextStyle(color:  Colors.grey.withOpacity(0.5)),
+    cursorColor: Colors.black38,
+    style: TextStyle(color: Colors.grey.withOpacity(0.5)),
     decoration: InputDecoration(
       prefixIcon: Icon(
         icon,
         color: Colors.grey,
       ),
-      labelText:text,
-      labelStyle:  TextStyle(color: Colors.grey.withOpacity(0.5)),
+      labelText: text,
+      labelStyle: TextStyle(color: Colors.grey.withOpacity(0.5)),
       filled: true,
       floatingLabelBehavior: FloatingLabelBehavior.never,
       fillColor: Colors.grey.withOpacity(0.1),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(1.0),
-        borderSide: const BorderSide(width: 0, style: BorderStyle.none)
+        borderSide: const BorderSide(width: 0, style: BorderStyle.none),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(1.0),
+        borderSide: BorderSide(color: Colors.blueAccent.withOpacity(0.5), width: 2.0),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(1.0),
+        borderSide: BorderSide(color: Colors.blueAccent.withOpacity(0.2), width: 1.0),
       ),
     ),
-      keyboardType: isPasswordType
-        ?TextInputType.visiblePassword :TextInputType.emailAddress,
-
+    keyboardType: isPasswordType ? TextInputType.visiblePassword : TextInputType.emailAddress,
   );
 }
 
@@ -54,14 +60,14 @@ BuildContext context, bool isLogin, Function onTap
       child: Text(
         isLogin ? 'LOG IN' : 'SIGN UP',
         style: const TextStyle(
-          color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 16),
+          color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
       ),
       style: ButtonStyle(
         backgroundColor:  MaterialStateProperty.resolveWith((states)
         {
           if(states.contains(MaterialState.pressed))
             {
-              return Colors.white;
+              return Colors.blueGrey;
             }
           return Colors.blueAccent;
         }),
