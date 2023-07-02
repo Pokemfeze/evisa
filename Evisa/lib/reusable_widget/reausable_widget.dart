@@ -69,7 +69,7 @@ BuildContext context, bool isLogin, Function onTap
             {
               return Colors.blueGrey;
             }
-          return Colors.blueAccent;
+          return Colors.indigo;
         }),
 
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(

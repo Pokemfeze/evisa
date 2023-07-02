@@ -22,7 +22,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent ,
+        backgroundColor: Colors.indigo ,
         elevation: 0,
         title: const Text(
             "Sign Up",

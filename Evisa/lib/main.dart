@@ -1,3 +1,4 @@
+import 'package:evisa/screen/home_screen.dart';
 import 'package:evisa/screen/signin_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const SignInScreen(),
+      home: const HomeScreen(),
     );
   }
 }
