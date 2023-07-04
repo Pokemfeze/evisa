@@ -145,6 +145,39 @@ class _VisaApplicationState extends State<VisaApplication> {
                       ),
                     ),
                   ),
+                 const SizedBox(height: 270),
+                  const Center(),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 15),
+                    child: Divider(
+                      thickness: 1,
+                    ),
+                  ),
+                  const SizedBox(height: 5),
+                  SizedBox(
+                    height: 40,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        // Logique du premier bouton
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.indigo,
+                        onPrimary: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          side: const BorderSide(color: Colors.white60),
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                      ),
+                      child: Center( // Ajout du widget Center ici
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center, // Centrer les éléments de la ligne (texte)
+                          children: const [
+                            Text("Save & Continue", style: TextStyle(fontSize: 15)),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
